@@ -26,21 +26,26 @@ def app(df, X, y):
     st.subheader("Select Values:")
 
     # Take input of features from the user.
-    A = st.slider("AF3", int(df["AF3"].min()), int(df["AF3"].max()))
-    B = st.slider("F7", int(df["F7"].min()), int(df["F7"].max()))
-    C = st.slider("F3", int(df["F3"].min()), int(df["F3"].max()))
-    D = st.slider("FC5", float(df["FC5"].min()), float(df["FC5"].max()))
-    E = st.slider("T7", float(df["T7"].min()), float(df["T7"].max()))
-    F = st.slider("P7", float(df["P7"].min()), float(df["P7"].max()))
-    G = st.slider("O1", float(df["O1"].min()), float(df["O1"].max()))
-    H = st.slider("O2", float(df["O2"].min()), float(df["O2"].max()))
-    I = st.slider("P8", float(df["P8"].min()), float(df["P8"].max()))
-    J = st.slider("T8", float(df["T8"].min()), float(df["T8"].max()))
-    K = st.slider("FC6", float(df["FC6"].min()), float(df["FC6"].max()))
-    L = st.slider("F4", float(df["F4"].min()), float(df["F4"].max()))
-    M = st.slider("F8", float(df["F8"].min()), float(df["F8"].max()))
-    N = st.slider("AF4", float(df["AF4"].min()), float(df["AF4"].max()))
- 
+    col1, col2 = st.columns(2)
+
+    with col1:
+        A = st.slider("AF3", int(df["AF3"].min()), int(df["AF3"].max()))
+        B = st.slider("F7", int(df["F7"].min()), int(df["F7"].max()))
+        C = st.slider("F3", int(df["F3"].min()), int(df["F3"].max()))
+        D = st.slider("FC5", float(df["FC5"].min()), float(df["FC5"].max()))
+        E = st.slider("T7", float(df["T7"].min()), float(df["T7"].max()))
+        F = st.slider("P7", float(df["P7"].min()), float(df["P7"].max()))
+        G = st.slider("O1", float(df["O1"].min()), float(df["O1"].max()))
+
+    with col2:
+        H = st.slider("O2", float(df["O2"].min()), float(df["O2"].max()))
+        I = st.slider("P8", float(df["P8"].min()), float(df["P8"].max()))
+        J = st.slider("T8", float(df["T8"].min()), float(df["T8"].max()))
+        K = st.slider("FC6", float(df["FC6"].min()), float(df["FC6"].max()))
+        L = st.slider("F4", float(df["F4"].min()), float(df["F4"].max()))
+        M = st.slider("F8", float(df["F8"].min()), float(df["F8"].max()))
+        N = st.slider("AF4", float(df["AF4"].min()), float(df["AF4"].max()))
+     
     st.sidebar.info("P7 and O1 electrode positive signals signify the patient has good neural flow of electrons between the hypothalamus and the cortex, in regions of constriction and hence there is a high chance of being free from tumour or other brain anomalies. However, its suggested to consult a physician.")
 
     # Create a list to store all the features
