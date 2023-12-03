@@ -20,3 +20,12 @@ Detecting tumor severity using machine learning (ML) and deep learning (DL) tech
 **Training and Validation:**
 - Splitting the dataset into training, validation, and testing sets.
 - Training the model on the training set and validating its performance on the validation set to fine-tune hyperparameters and avoid overfitting.
+
+
+Dataset Link: https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset/data
+
+Open in Kaggle for best peformance:
+1. Click on the link
+2. Click on New Notebook
+3. Upload the code
+4. Run all and enjoy!

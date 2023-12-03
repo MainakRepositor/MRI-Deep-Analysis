@@ -30,5 +30,14 @@ def app():
    - Training the model on the training set and validating its performance on the validation set to fine-tune hyperparameters and avoid overfitting.
 
 ''')
+    
+    st.sidebar.markdown(
+    f'<a href="https://braintumor.org/support-services/support-groups/brain-tumor-support-conversations/" target="_blank" style="display: inline-block; padding: 12px 20px; background-color: blue; color: white; text-align: center; text-decoration: none; font-size: 16px; border-radius: 4px;">Brain Tumour Health Assistance</a>',
+    unsafe_allow_html=True
+)
 
+    st.info("Brain Tumour Operation and Support Centers Near Me:")
+    
+    st.markdown(f'<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d235619.5694229345!2d88.1402545373443!3d22.670345617117867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sbrain%20tumor%20hospitals%20near%20me!5e0!3m2!1sen!2sin!4v1701615677385!5m2!1sen!2sin" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',unsafe_allow_html=True)
+    
     

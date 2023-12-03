@@ -23,6 +23,10 @@ def app():
     
     uploaded_file = st.file_uploader("Choose a File", type=['jpg','png','jpeg'])
 
+    st.sidebar.markdown(
+    f'<a href="https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset" target="_blank" style="display: inline-block; padding: 12px 20px; background-color: blue; color: white; text-align: center; text-decoration: none; font-size: 16px; border-radius: 4px;">Brain Tumour Dataset</a>',
+    unsafe_allow_html=True
+)
 
     if uploaded_file!=None:
         st.image(uploaded_file)
